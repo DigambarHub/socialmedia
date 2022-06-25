@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bar_icon{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.bar_icon a{
+    width: 10rem;
+    background: rgb(101, 94, 202);
+    color: blanchedalmond;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.3rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: all .5s linear;
+    transform: translateX(-8.8rem);
+}
+.bar_icon a:hover{
+    transform: translateX(0);
+}
+
+.bar_icon .fab{
+    animation: dhak 3s linear alternate-reverse infinite;
+}
+@keyframes dhak{
+    from{
+        transform: scale(0.5);
+    }to{
+        transform: scale(1);
+    }
+}
+.bar_icon .facebook{
+    background: rgb(16, 37, 226);
+}
+.bar_icon .instagram{
+    background: rgb(226, 16, 173);
+}
+.bar_icon .linkedin{
+    background: rgb(78, 93, 228);
+}
+.bar_icon .youtube{
+    background: rgb(226, 16, 16);
+}
